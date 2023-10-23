@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainPage</title>
+    <meta name="author" content="Bored">
+    <style type="text/css">
+        body{
+            background-image: url(http://localhost:8800/resource/background.png);
+            background-position: bottom;
+            background-attachment: fixed;
+            background-repeat: repeat-x;
+        }
+        #top h1{
+            color:hotpink;
+            text-align: center;
+        }
+        #rowmenu li{
+            display: inline;
+        }
+        #rowmenu a{
+            line-height: 50px;
+            color: lightyellow;
+            font-size: 30px;
+            padding: 20px;
+            text-decoration: none;
+        }
+        #rowmenu a:hover{
+            background-color: deeppink;
+            color: yellow;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+</head>
+<body style="background-color:azure;">
+    <div id="top" style=" height: 30px;">
+        <H1>Blog's Blog</H1>
+    </div>
+    <div id="rowmenu" style="background-color:hotpink; height: 50px;">
+        <ul>
+            <li>
+                <a href="briefintroduction.html" target="container">简介</a>
+            </li>
+            <li>
+                <a href="Music.html" target="container">音乐</a>
+            </li>
+        </ul>
+
+    </div>
+    <div id="container" style="background-color:rgba(248, 248, 248,0); height:100%;">
+        <iframe src="briefintroduction.html" name="container" style="height: 100%; width: 100%;">
+
+        </iframe>
+    </div>
+</body>
+</html>
